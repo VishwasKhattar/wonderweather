@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>head}}
+</head>
+
+<body>
+
+    <!-- Navbar using Bootstrap 4 -->
+
+    {{>navbar}}
+    <!-- Main Header -->
+
+    <div class="container-fluid main_header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="row">
+
+                    <!-- Left side div -->
+
+                    <div class="col-md-6 col-12 main_header_right">
+                        <figure class="err_img">
+                            <img src="images/404.png" alt="AboutUs" class="img-fluid" title="About Us">
+                        </figure>
+                    </div>
+
+                    <!-- Right side div -->
+
+                    <div class="col-md-6 col-12 main_header_left align-items-center">
+                        <p>Welcome to Wonder Weather</p>
+                        <h1>{{errorMsg}}</h1>
+                        <a href="/"><button>Go Back</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+
+    {{>footer}}
+</body>
+
+</html>
